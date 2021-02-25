@@ -14,12 +14,7 @@ export async function getStaticProps() {
 }
 
 const SafeLink = ({ href, children, ...rest }) => (
-  <a
-    href={href}
-    target='_blank'
-    rel='noopener noreferrer'
-    {...rest}
-  >
+  <a href={href} target='_blank' rel='noopener noreferrer' {...rest}>
     {children}
   </a>
 )
@@ -46,7 +41,6 @@ function Card({ className, children }) {
     </animated.div>
   )
 }
-
 
 export default function Communities({ campus, communities }) {
   return (

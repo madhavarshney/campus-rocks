@@ -14,7 +14,9 @@ function DarkModeToggle({ onToggle }) {
 function MyApp({ Component, pageProps }) {
   return (
     <div className={styles.container}>
-      <DarkModeToggle onToggle={() => document.documentElement.classList.toggle('dark-mode')} />
+      <DarkModeToggle
+        onToggle={() => document.documentElement.classList.toggle('dark-mode')}
+      />
 
       <main className={styles.main}>
         <h1 className={styles.title}>
@@ -22,14 +24,19 @@ function MyApp({ Component, pageProps }) {
         </h1>
 
         <p className={styles.description}>
-          <Link href='/'>Clubs</Link>, <Link href='/communities'>communities</Link>, <Link href='/classes'>classes</Link>, and more at {pageProps.campus?.name || '<404>'}
+          <Link href='/'>Clubs</Link>,{' '}
+          <Link href='/communities'>communities</Link>,{' '}
+          <Link href='/classes'>classes</Link>, and more at{' '}
+          {pageProps.campus?.name || '<404>'}
         </p>
 
         <Component {...pageProps} />
       </main>
 
       <footer className={styles.footer}>
-        <span>Made with <span style={{ color: '#e25555' }}>♥</span> by&nbsp;</span>
+        <span>
+          Made with <span style={{ color: '#e25555' }}>♥</span> by&nbsp;
+        </span>
         <a
           href='https://github.com/madhavarshney'
           target='_blank'
