@@ -1,3 +1,8 @@
+.nothingFound {
+  margin: 2em 0;
+  text-align: center;
+}
+
 .showMore {
   text-align: center;
 }

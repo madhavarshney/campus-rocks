@@ -72,8 +72,13 @@
   flex: 1;
 }
 
-.link {
-  display: inline-block;
+.links {
   margin-top: 1em;
+  display: flex;
+  flex-flow: row wrap;
+  gap: 0.5em;
+}
+
+.links a {
   color: rgb(55, 118, 236);
 }

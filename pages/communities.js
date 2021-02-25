@@ -52,16 +52,22 @@ export default function Communities({ campus, communities }) {
       <h2>Communities</h2>
 
       <div className={styles.cardList}>
-        {communities.map(({ name, description, link, linkText, image }) => (
+        {communities.map(({ name, description, links, image }) => (
           <Card key={name} className={styles.card}>
             <div className={styles.titleRowWrapper}>
               <h3 className={styles.title}>{name}</h3>
               <div className={styles.avatar}>
-                <img src={image} />
+                <img alt={image.alt} src={image.url} />
               </div>
             </div>
             <div className={styles.description}>{description}</div>
-            <SafeLink className={styles.link} href={link}>{linkText}</SafeLink>
+            <div className={styles.links}>
+              {links.map(({ url, text }) => (
+                <SafeLink key={url} href={url}>
+                  {text}
+                </SafeLink>
+              ))}
+            </div>
           </Card>
         ))}
       </div>

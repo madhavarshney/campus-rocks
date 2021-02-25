@@ -1,21 +1,45 @@
 communities:
   - name: r/foothill
-    description: Foothill College’s unnofficial subreddit! Get help, questions answered, and more!
-    link: https://reddit.com/r/foothill
-    linkText: Go to /r/foothill
-    image: https://www.redditinc.com/assets/images/site/reddit-logo.png
+    description: Join Foothill College’s unnofficial subreddit to get help, ask questions, and more!
+    image:
+      url: https://www.redditinc.com/assets/images/site/reddit-logo.png
+      alt: Reddit Logo
+    links:
+      - url: https://reddit.com/r/foothill
+        text: Go to /r/foothill
   - name: Discord Server
-    description: Foothill College’s unnofficial Discord server! Get help, questions answered, and more!
-    link: https://discord.gg/xYzNa9s
-    linkText: Join the server
-    image: /discord-icon-purple.svg
+    description: Hop into Foothill College’s unnofficial Discord server for a fun place to hang out with other students!
+    image:
+      url: /discord-icon-purple.svg
+      alt: Discord Logo
+    links:
+      - url: https://discord.gg/xYzNa9s
+        text: Join the discord server
   - name: Facebook Group
-    description: Foothill College’s unnofficial Facebook group! Get help, questions answered, and more!
-    link: https://www.facebook.com/groups/222984004880515
-    linkText: Go to group page
-    image: https://facebookbrand.com/wp-content/uploads/2019/04/f_logo_RGB-Hex-Blue_512.png?w=128&h=128
+    description: Join nearly 2k fellow students in Foothill College’s unnofficial Facebook group. Have fun!
+    image:
+      url: https://facebookbrand.com/wp-content/uploads/2019/04/f_logo_RGB-Hex-Blue_512.png?w=128&h=128
+      alt: Facebook Logo
+    links:
+      - url: https://www.facebook.com/groups/222984004880515
+        text: Go to group page
   - name: ASFC Campus Council
-    description: Campus Council in the Associated Students of Foothill College (ASFC) oversees government.
-    link: https://discord.gg/PupzpwwarG
-    linkText: Join the discord server
-    image: https://cdn.discordapp.com/icons/767772560519594025/10eb4749ec9870cabf40849332c1d052.webp?size=128
+    description: Let your voice be heard! Join the Associated Students of Foothill College (ASFC) and have an impact on Foothill College.
+    image:
+      url: https://cdn.discordapp.com/icons/767772560519594025/10eb4749ec9870cabf40849332c1d052.webp?size=128
+      alt: ASFC Campus Council Logo
+    links:
+      - url: https://discord.gg/PupzpwwarG
+        text: Official discord server
+  - name: Official Instagram
+    description: Follow Foothill College, ASFC, and President Thuy for information and updates regarding campus!
+    image:
+      url: https://instagram-brand.com/wp-content/uploads/2016/11/Instagram_AppIcon_Aug2017.png?w=128
+      alt: Instagram Logo
+    links:
+      - url: https://www.instagram.com/foothillcollege/
+        text: '@foothillcollege'
+      - url: https://www.instagram.com/asfcinsta/
+        text: '@asfcinsta'
+      - url: https://www.instagram.com/foothillprez/
+        text: '@foothillprez'

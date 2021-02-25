@@ -10,7 +10,6 @@
     "lint:fix": "eslint --fix \"**/*.js\" && prettier --write \"**/*.js\""
   },
   "dependencies": {
-    "fuse.js": "^6.4.6",
     "js-yaml": "^4.0.0",
     "match-sorter": "^6.3.0",
     "next": "10.0.7",

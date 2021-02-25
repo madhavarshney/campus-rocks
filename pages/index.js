@@ -1,7 +1,6 @@
 import Head from 'next/head'
-import Fuse from 'fuse.js'
 import { matchSorter } from 'match-sorter'
-import { useState, useMemo, useEffect } from 'react'
+import { useState, useMemo } from 'react'
 
 import Calendar from '../lib/components/Calendar'
 import Modal from '../lib/components/Modal'
@@ -32,12 +31,9 @@ export default function Home({ campus, clubs, categories }) {
       return clubs
     }
 
-    const fuse = new Fuse(clubs, {
-      threshold: 0.3,
-      keys: ['name']
+    return matchSorter(clubs, searchTerm.trim(), {
+      keys: ['name'],
     })
-
-    return fuse.search(searchTerm).map((options) => options.item)
   }, [clubs, searchTerm])
 
   return (
@@ -45,8 +41,6 @@ export default function Home({ campus, clubs, categories }) {
       <Head>
         <title>{campus.shortName} Rocks</title>
       </Head>
-
-      {/* <h1>Clubs</h1> */}
 
       <input
         value={input}
@@ -60,6 +54,8 @@ export default function Home({ campus, clubs, categories }) {
         clubs={filteredClubs}
         onClubSelected={(club) => setSelectedClub(club)}
       />
+
+      <h2>Active Clubs</h2>
 
       <ClubList
         categories={categories}
