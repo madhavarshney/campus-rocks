@@ -1,13 +1,13 @@
 import Head from 'next/head'
 import Fuse from 'fuse.js'
-import { useState, useMemo } from 'react'
+import { matchSorter } from 'match-sorter'
+import { useState, useMemo, useEffect } from 'react'
 
 import Calendar from '../lib/components/Calendar'
 import Modal from '../lib/components/Modal'
 import ClubList from '../lib/components/ClubList'
 import { useDebounce } from '../lib/useDebounce'
-import { getClubsInfo } from '../lib/clubs'
-import { getCampusInfo } from '../lib/campus'
+import { getCampusInfo, getClubsInfo } from '../lib/data'
 import styles from '../styles/Home.module.css'
 
 export async function getStaticProps() {
@@ -41,52 +41,31 @@ export default function Home({ campus, clubs, categories }) {
   }, [clubs, searchTerm])
 
   return (
-    <div className={styles.container}>
+    <>
       <Head>
         <title>{campus.shortName} Rocks</title>
-        <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          {campus.shortName} Rocks
-        </h1>
+      {/* <h1>Clubs</h1> */}
 
-        <p className={styles.description}>
-          Clubs, communities, and more at {campus.name}
-        </p>
+      <input
+        value={input}
+        onChange={(event) => setInput(event.target.value)}
+        placeholder={`Search clubs at ${campus.name}`}
+        className={styles.search}
+      />
 
-        <input
-          value={input}
-          onChange={(event) => setInput(event.target.value)}
-          placeholder={`Search ${campus.name}`}
-          className={styles.search}
-        />
+      <Calendar
+        categories={categories}
+        clubs={filteredClubs}
+        onClubSelected={(club) => setSelectedClub(club)}
+      />
 
-        <Calendar
-          categories={categories}
-          clubs={filteredClubs}
-          onClubSelected={(club) => setSelectedClub(club)}
-        />
-
-        <h1>Active Clubs</h1>
-
-        <ClubList
-          categories={categories}
-          clubs={filteredClubs}
-          onClick={(club) => setSelectedClub(club)}
-        />
-      </main>
-
-      <footer className={styles.footer}>
-        <a
-          href="https://github.com/madhavarshney"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Built by Madhav Varshney
-        </a>
-      </footer>
+      <ClubList
+        categories={categories}
+        clubs={filteredClubs}
+        onClick={(club) => setSelectedClub(club)}
+      />
 
       {selectedClub && (
         <Modal
@@ -95,6 +74,6 @@ export default function Home({ campus, clubs, categories }) {
           onClose={() => setSelectedClub(null)}
         />
       )}
-    </div>
+    </>
   )
 }

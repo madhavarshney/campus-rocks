@@ -9,40 +9,45 @@
   align-items: center;
   justify-content: center;
   overscroll-behavior: contain;
+  padding: 0 1em;
   /* z-index: -1; */
 }
 
 .modal {
   padding: 2em;
   border-radius: 4px;
-  min-width: 400px;
   background: var(--background-color);
   color: var(--text-color);
   position: relative;
-  max-width: min(95%, 700px);
+  min-width: min(100%, 400px);
+  max-width: min(100%, 700px);
   max-height: 95%;
   overflow: auto;
+  overflow-wrap: anywhere;
 }
 
 .modal .closeButton {
   position: absolute;
-  top: 1em;
-  right: 1em;
+  top: 12px;
+  right: 0;
   background: none;
   border: none;
   font-size: 28px;
   cursor: pointer;
   outline: none;
+  padding: 1em;
+  line-height: 0;
   color: var(--text-color);
 }
 
 .card h3 {
   margin: 0 0 1rem 0;
   font-size: 1.4rem;
+  margin-right: 1em;
 }
 
 .card p {
-  font-size: 1.1rem;
+  /* font-size: 1.1rem; */
   line-height: 2;
   margin: 0;
 }
@@ -58,3 +63,8 @@
   margin-top: 1rem;
 }
 
+.card .label {
+  text-transform: uppercase;
+  font-weight: 550;
+  color: #727272;
+}

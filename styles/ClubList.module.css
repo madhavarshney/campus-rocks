@@ -19,6 +19,7 @@
   text-decoration: none;
   border: 1px solid #eaeaea;
   overflow: hidden;
+  overflow-wrap: anywhere;
 
   border-radius: 10px;
   border-top-left-radius: 2px;

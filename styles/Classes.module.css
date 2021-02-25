@@ -1,0 +1,58 @@
+.showMore {
+  text-align: center;
+}
+
+.showMore button {
+  border: none;
+  outline: none;
+  background: var(--hover-bg-color);
+  color: var(--text-color);
+  border: solid 2px var(--border-color);
+  border-radius: 8px;
+  padding: 0.5em;
+  text-transform: uppercase;
+  font-family: inherit;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.sectionsGrid {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto 1fr;
+  gap: 16px;
+  padding: 1.2em 0;
+}
+
+.mobileRow {
+  line-height: 1.5;
+}
+
+.mobileRow {
+  margin-bottom: 0.8em;
+}
+
+.mobileRow > div {
+  margin: 0.3em 0;
+}
+
+.mobileRow {
+  display: none;
+}
+
+@media (max-width: 864px) {
+  .sectionsGrid {
+    display: block;
+    padding-bottom: 0.2em;
+    /* display: flex; */
+    /* flex-flow: row wrap; */
+    /* gap: 0 16px; */
+  }
+
+  .sectionsGrid > :not(.mobileRow) {
+    display: none;
+  }
+
+  .sectionsGrid > .mobileRow {
+    display: block;
+  }
+}

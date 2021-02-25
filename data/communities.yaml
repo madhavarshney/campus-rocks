@@ -1,0 +1,21 @@
+communities:
+  - name: r/foothill
+    description: Foothill College’s unnofficial subreddit! Get help, questions answered, and more!
+    link: https://reddit.com/r/foothill
+    linkText: Go to /r/foothill
+    image: https://www.redditinc.com/assets/images/site/reddit-logo.png
+  - name: Discord Server
+    description: Foothill College’s unnofficial Discord server! Get help, questions answered, and more!
+    link: https://discord.gg/xYzNa9s
+    linkText: Join the server
+    image: /discord-icon-purple.svg
+  - name: Facebook Group
+    description: Foothill College’s unnofficial Facebook group! Get help, questions answered, and more!
+    link: https://www.facebook.com/groups/222984004880515
+    linkText: Go to group page
+    image: https://facebookbrand.com/wp-content/uploads/2019/04/f_logo_RGB-Hex-Blue_512.png?w=128&h=128
+  - name: ASFC Campus Council
+    description: Campus Council in the Associated Students of Foothill College (ASFC) oversees government.
+    link: https://discord.gg/PupzpwwarG
+    linkText: Join the discord server
+    image: https://cdn.discordapp.com/icons/767772560519594025/10eb4749ec9870cabf40849332c1d052.webp?size=128

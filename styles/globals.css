@@ -22,6 +22,10 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
+.noscroll {
+  overflow: hidden;
+}
+
 body {
   background-color: var(--background-color);
   color: var(--text-color);
@@ -29,7 +33,18 @@ body {
 
 a {
   color: inherit;
-  text-decoration: none;
+  text-decoration-color: rgb(55, 118, 236);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
+  /* text-decoration: none; */
+  /* font-weight: 550; */
+  overflow-wrap: anywhere;
+  transition: text-decoration-color 0.2s;
+}
+
+a:hover {
+  text-decoration-color: red;
+  text-decoration-thickness: 3px;
 }
 
 *, *::before, *::after {
@@ -38,8 +53,14 @@ a {
 
 .dark-mode-toggle {
   position: fixed;
-  top: 24px;
-  right: 24px;
+  top: 8px;
+  right: 8px;
+}
+
+@media (max-width: 600px) {
+  .dark-mode-toggle {
+    position: absolute;
+  }
 }
 
 .dark-mode-toggle button {
@@ -49,6 +70,7 @@ a {
   font-size: 24px;
   border-radius: 4px;
   cursor: pointer;
+  padding: 0.4em 0.5em;
 }
 
 .dark-mode-toggle button:hover {

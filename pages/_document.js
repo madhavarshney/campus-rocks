@@ -10,8 +10,9 @@ class MyDocument extends Document {
     return (
       <Html>
         <Head>
+          <link rel="icon" href="/favicon.ico" />
           <link rel="preconnect" href="https://fonts.gstatic.com" />
-          <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet" />
+          <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;550;700&display=swap" rel="stylesheet" />
         </Head>
         <body>
           <Main />
