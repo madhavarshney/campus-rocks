@@ -1,0 +1,519 @@
+categories:
+  group:
+    name: Group
+    color: rgb(239 212 255)
+  subject:
+    name: Subject
+    color: rgb(212 239 255)
+  stem:
+    name: STEM
+    color: rgb(212 255 216)
+  org:
+    name: Organization
+    color: rgb(255 232 184)
+
+clubs:
+  - name: Alumni Connection Club
+    purpose: We strive to foster a spirit of loyalty and to promote the general welfare of Foothill College. Strengthening the ties between Foothill alumni, the community, and four-year universities is our ultimate goal.
+    category: group
+    club_representative:
+      name: Nova Huang Yawen
+      email: 1140271641@qq.com
+    advisor:
+      name: Mike Mohebb
+
+  - name: Black Student Union (BSU)
+    purpose: A community for all black students on campus, open to any student at Foothill regardless of color, as a place to build community, and accomplish outreach initiatives on campus and the surrounding community. Our mission is to develop and encourage student leaders that impact their campus and community through advocacy and activism.
+    discord: https://discord.gg/NskrXWZbDG
+    category: group
+    meetings:
+      day: Thursday
+      start_time: 13:00
+      end_time: 14:00
+      frequency: biweekly
+    club_representative:
+      name: Sydney Wheeler
+      email: sydswheeler9@gmail.com
+    advisor:
+      name: Kamara Tramble
+
+  - name: Book Art Club
+    purpose: Find students who are fascinated by the universe and want to explore more.
+    category: subject
+    meetings:
+      day: Friday
+      start_time: 17:00
+      end_time: 18:00
+      frequency: biweekly
+    club_representative:
+      name: Siya Song
+      email: sara172425@gmail.com
+    advisor:
+      name: Bobby Lau
+
+  - name: Business & Entrepreneurship Club
+    purpose: Introduce students to the aspects of business with a focus on entrepreneurship, facilitate critical-thinking discussion of current events in the international sphere and participate in business-related discussions.
+    category: subject
+    meetings:
+      day: Wednesday
+      start_time: 15:00
+      end_time: 16:00
+      frequency: weekly
+    club_representative:
+      name: Joshua Santos
+      email: santos.josh888@gmail.com
+    advisor:
+      name: Laurence Lew
+
+  - name: Chinese Campus Fellowship
+    purpose: Provide Chinese students a platform to connect with each other and experience a sense of belonging.
+    category: group
+    meetings:
+      day: Friday
+      start_time: 21:00
+      end_time: 22:30
+      frequency: weekly
+    club_representative:
+      name: Nga Hei Tsang
+      email: hillary.tnh@gmail.com
+    advisor:
+      name: Erwin Widiarta
+
+  - name: Circle K
+    purpose: Provide constructive opportunities for students to become involved on campus and in the community through service work to others in need.
+    category: org
+    meetings:
+      day: Thursday
+      start_time: 18:00
+      end_time: 19:00
+      frequency: biweekly
+    club_representative:
+      name: Erik Bach
+      email: ebach615@gmail.com
+    advisor:
+      name: Robert Hartwell
+
+  - name: College Leap @ Foothill
+    purpose: Non-profit organization organized by Berkeley Haas School of Business. We aim to help Foothill College international students, share some alumni transfer experience, provide volunteer activities, and regularly conduct experience exchange meetings. We will solve the problems of life and study for international students.
+    category: org
+    meetings:
+      day: Wednesday
+      start_time: 20:00
+      end_time: 21:00
+      frequency: weekly
+    club_representative:
+      name: Hanyang Wang
+      email: wangh2028@gmail.com
+    advisor:
+      name: Scott Lankford
+
+  - name: Computer Science Club
+    purpose: We promote fun and practical applications of computer science by providing a friendly community of both students and alumni to share and discuss concepts, ideas, and projects, with regular workshops and hackathons. Everyone from beginners to pros are welcome!
+    email: cs.foothill@gmail.com
+    discord: https://discord.gg/graRNeE
+    category: stem
+    meetings:
+      day: Friday
+      start_time: 15:00
+      end_time: 17:00
+      frequency: weekly
+    club_representative:
+      name: Madhav Varshney
+      email: cs.foothill@gmail.com
+    advisor:
+      name: Daniel Nghiem
+
+  - name: Creative Writing Club
+    purpose: Provides a safe place for students to write, workshop their pieces with others, as well as share their writings.
+    discord: https://discord.gg/xBb799RPx4
+    category: subject
+    meetings:
+      day: Wednesday
+      start_time: 16:00
+      end_time: 17:00
+      frequency: weekly
+    club_representative:
+      name: Sara Gonsalves
+      email: gonsalves.m.sara@gmail.com
+    advisor:
+      name: Stephanie Chan
+
+  - name: Data Science & AI Club
+    purpose: Support community college students with diversified interests by providing them with valuable information and hands-on opportunities. Together, we will explore the interdisciplinary fields of statistics & cognitive sciences-AI, in effort to cultivate new skills and better prepare ourselves for future academic endeavors.
+    email: foothillaiclub@gmail.com
+    discord: https://discord.gg/EwmCFRR25s
+    category: stem
+    meetings:
+      day: Thursday
+      start_time: 16:00
+      end_time: 17:00
+      frequency: biweekly
+    club_representative:
+      name: Isabelle Hong
+      email: foothillaiclub@gmail.com
+    advisor:
+      name: Lane Johnson
+
+  - name: Debate Club
+    purpose: Come debate with us!
+    category: subject
+    club_representative:
+      name: Charles Fuad
+      email: charlesfuad24@gmail.com
+    advisor:
+      name: Steven Clemmons
+
+  - name: Dental Hygiene Club
+    purpose: To cultivate, promote, and sustain the art and science of dental hygiene.
+    category: subject
+    meetings:
+      day: Monday
+      start_time: 12:00
+      end_time: 13:00
+      frequency: monthly
+    club_representative:
+      name: Chunlan (Stellar) Chen
+      email: stellar.chan@yahoo.com
+    advisor:
+      name: Pia Staana
+
+  - name: Economics Club
+    purpose: To provide opportunities for students with an interest in economics to participate in discussions of economic topics.
+    category: subject
+    meetings:
+      day: Friday
+      start_time: 13:00
+      end_time: 14:00
+      frequency: weekly
+    club_representative:
+      name: Ryan Torabi
+      email: ryanmtorabi@gmail.com
+    advisor:
+      name: Malkiat Sandhu
+
+  - name: Enactus
+    purpose: Connects students through entrepreneurial-based projects that empower people to transform opportunities into real, sustainable progress for themselves and their communities.
+    category: org
+    meetings:
+      day: Friday
+      start_time: 12:30
+      end_time: 13:30
+      frequency: weekly
+    club_representative:
+      name: Chi Tran
+      email: tranc6618@gmail.com
+    advisor:
+      name: Laurence Lew
+
+  - name: Engineering Club
+    purpose: A friendly community of students looking to explore the world of engineering through activities and projects by providing students with fun experiences outside of the classroom. We hope to give our members guidance from experienced advisors including veteran engineers from the industry!
+    email: sec.foothill@gmail.com
+    discord: https://discord.gg/ZGzS4zS
+    category: stem
+    meetings:
+      day: Friday
+      start_time: 13:00
+      end_time: 14:00
+      frequency: weekly
+    club_representative:
+      name: Madhav Varshney
+      email: sec.foothill@gmail.com
+    advisor:
+      name: Frank Cascarano
+
+  - name: Foothill American Chemical Society
+    purpose: A community for students who are interested in chemistry.
+    discord: https://discord.gg/AVyFZW6gqV
+    category: stem
+    meetings:
+      day: Friday
+      start_time: 11:00
+      end_time: 12:00
+      frequency: biweekly
+    club_representative:
+      name: Chon Wa Ho
+      email: hochonwa28@gmail.com
+    advisor:
+      name: Kathleen Armstrong
+      email: armstrongkathy@foothill.edu
+
+  - name: Foothill Medical/Dental Brigades
+    purpose: Introduce students to public health and international aid, as well as to fundraise for a medical and dental service brigade to take place in the summer either in-person or as a virtual brigade.
+    category: subject
+    meetings:
+      day: Friday
+      start_time: 15:30
+      end_time: 16:30
+      frequency: monthly
+    club_representative:
+      name: Anna Jackson
+      email: jacksonanna52@yahoo.com
+    advisor:
+      name: Lisa Schultheis, Karen Erickson
+
+  - name: Foothill Theatre Club
+    purpose: Foster a greater sense of community for Foothills theatre-minded students academically, recreationally, and socially.
+    category: subject
+    meetings:
+      day: Wednesday
+      start_time: 16:00
+      end_time: 17:00
+      frequency: biweekly
+    club_representative:
+      name: Denna Basto
+      email: denna.basto@gmail.com
+    advisor:
+      name: Tom Gough
+
+  - name: Fund the Future
+    purpose: Advocating for education in developing countries and economic growth as well as microlending through Kiva and other activities to educate students about global issues.
+    category: org
+    club_representative:
+      name: Lorenzo Marconcini
+      email: lorenzomarconcini01@gmail.com
+    advisor:
+      name: Brian Evans
+
+  - name: Gender & Sexualities Alliance Club (GSA)
+    purpose: Plans to act as a safe space for those trying to find community as well as a place where students can share struggles that can be solved together. On top of forming connections between students, the club also serves to educate and advocate for a more equitable environment on campus in terms of gender and sexuality.
+    category: group
+    meetings:
+      day: Monday
+      start_time: 13:00
+      end_time: 14:00
+      frequency: biweekly
+    club_representative:
+      name: Sienna Segura
+      email: siennabantolo@gmail.com
+    advisor:
+      name: Scott Lankford, Rick Edwards
+
+  - name: Honors Scholars Club
+    purpose: A community of motivated students who thrive off of intellectual curiosity, building strong connections and friendships, and who stand for equality in education for all. We provide members with opportunities to engage in social and academic activities that foster educational aspirations.
+    discord: https://discord.gg/DEUuFvu6CH
+    category: group
+    meetings:
+      day: Friday
+      start_time: 11:00
+      end_time: 12:00
+      frequency: weekly
+    club_representative:
+      name: Olivia Andrea Carvallo
+      email: oliviacarvallo2001@gmail.com
+    advisor:
+      name: Scott Lankford
+
+  - name: Indonesian Club
+    purpose: We are gathering every Indonesian student attending foothill college together especially for new students, to welcome them and just build a solid group that makes everyone feel comfortable to be in.
+    category: group
+    meetings:
+      day: Tuesday
+      start_time: 15:00
+      end_time: 16:00
+      frequency: weekly
+    club_representative:
+      name: Patrick Gilbert Reyanldi
+      email: khogilbert888@gmail.com
+    advisor:
+      name: Erwin Widiarta
+
+  - name: InterVarsity
+    purpose: We seek to love God and love other people through online Bible studies, virtual large group gatherings with other colleges and universities as well as special events and games.
+    discord: https://discord.gg/EEZgdWgDcf
+    category: group
+    meetings:
+      day: Monday
+      start_time: 15:30
+      end_time: 16:30
+      frequency: weekly
+    club_representative:
+      name: Joy Furman
+      email: furmanjm@hotmail.com
+    advisor:
+      name: Richard Daley
+
+  - name: Math Club
+    purpose: A community of students aiming to provide a fun environment for people to enjoy math activities outside of the classroom, with puzzles, problems, workshops, and more! You can also get homework help from fellow students and folks who have already taken your classes.
+    category: stem
+    discord: https://discord.gg/KhbNDBB
+    email: mathclubatfh@gmail.com
+    meetings:
+      day: Wednesday
+      start_time: 17:00
+      end_time: 18:00
+      frequency: weekly
+    club_representative:
+      name: David Tso
+      email: mathclubatfh@gmail.com
+    advisor:
+      name: Daniel Nghiem
+
+  - name: Muslim Student Association (MSA)
+    purpose: To provide a safe space for Muslim and non-Muslim Foothill College students to connect with each other and engage in conversations surrounding community wellbeing, Islamophobia, and global interests related to Islam.
+    discord: https://discord.gg/5yKssD5bsF
+    category: group
+    club_representative:
+      name: Mariam Touni
+      email: mtouni18@gmail.com
+    advisor:
+      name: Zaina Hamid
+
+  - name: My Other Brother and Sister (MOBS)
+    purpose: The purpose of MOBS is to empower Black men and women and provide them with a counter space and sense of community that will allow students to utilize each other as systems of support to aid in increased access, retention, and overall personal, academic and professional development. The core values of MOBS are unity, Black culture, culturally validating identity development and K-12 outreach in urban, hood’ communities. Rooted in these core values, MOBS objective is to increase access to and retention in higher education for underserved Black men and women and develop students into scholars/leaders.
+    discord: https://discord.gg/HcXjxVDebT
+    category: group
+    club_representative:
+      name: Thomas Asrat
+      email: tommy.asrat@gmail.com
+    advisor:
+      name: Brandon Younger
+
+  - name: Project Hope
+    purpose: Seeks to create and maintain a positive, open-minded, and destigmatizing culture in the Foothill College community. We achieve these goals by promoting student mental health through events that bridge wellness and cultural awareness.
+    category: org
+    meetings:
+      day: Tuesday
+      start_time: 12:00
+      end_time: 13:00
+      frequency: biweekly
+    club_representative:
+      name: Keziah Clark
+      email: keziah121212@gmail.com
+    advisor:
+      name: Clifton Der Bing
+      email: derbingclifton@fhda.edu
+
+  - name: Psychology Club
+    purpose: To promote the interest of psychological learning, presentations, learning experiences, and to serve students whose major is psychology.
+    category: stem
+    meetings:
+      day: Friday
+      start_time: 12:00
+      end_time: 13:00
+      frequency: weekly
+    club_representative:
+      name: Chris Payne
+      email: cpayne@gmail.com
+    advisor:
+      name: Eta Lin, Benjamin Stefonik
+
+  - name: Puente Club
+    purpose: A union that welcomes and brings students of all backgrounds together and opens up conversations upon the impacts of the Latino community.
+    category: group
+    meetings:
+      day: Monday
+      start_time: 18:00
+      end_time: 19:00
+      frequency: biweekly
+    club_representative:
+      name: Asusena Gil
+      email: asusenagil2001@gmail.com
+    advisor:
+      name: Maritza Jackson Sandoval
+      email: jacksonsandovalmaritza@fhda.edu
+
+  - name: Respiratory Therapy
+    purpose: "To enhance the student experience and promote development in the areas of: academic performance, clinical reparation, leadership development, social engagement, community involvement, and gainful employment. To promote our profession, to represent Foothill College and the Respiratory Therapy Program, and to educate and raise awareness on respiratory care and issues to the broader community."
+    category: subject
+    meetings:
+      day: Tuesday
+      start_time: 15:00
+      end_time: 16:00
+      frequency: weekly
+    club_representative:
+      name: Renee Moore
+      email: rmoore90@my.smccd.edu
+    advisor:
+      name: Brenda Hanning
+
+  - name: Student Veterans of America, Foothill College Chapter (SVAFCC)
+    purpose: This organization seeks to establish and maintain a network of student veterans attending Foothill College, and to provide them with the resources, assistance, direction, and support necessary to achieve their academic, professional, and personal goals.
+    category: group
+    club_representative:
+      name: William J. Wunderlin
+      email: caload3@gmail.com
+    advisor:
+      name: Julie Brown
+
+  - name: Social Justice Club
+    purpose: To create an environment where students can discuss important national and international issues that impact those around us.
+    discord: https://discord.gg/XbQ7veJF9N
+    category: org
+    meetings:
+      day: Wednesday
+      start_time: 11:00
+      end_time: 12:00
+      frequency: weekly
+    club_representative:
+      name: Negar Bagheri
+      email: negar3@gmail.com
+    advisor:
+      name: John Fox
+
+  - name: Student Chapter of National Association of Veterinary Technicians (SCNAVTA)
+    purpose: We work to educate the public on our profession and help our community.
+    category: subject
+    meetings:
+      day: Monday
+      start_time: 18:00
+      end_time: 19:00
+      frequency: monthly
+    club_representative:
+      name: Ellen Ma
+      email: elma708@yahoo.com
+    advisor:
+      name: Sandy Gregory
+
+  - name: Students Supporting Israel (SSI)
+    purpose: We strive to be a clear and confident pro-Israel voice on college campuses, and to support students in grassroots pro-Israel advocacy.
+    category: group
+    meetings:
+      day: Wednesday
+      start_time: 16:00
+      end_time: 17:00
+      frequency: biweekly
+    club_representative:
+      name: Ori Nirpaz
+      email: ori.nirpaz@gmail.com
+    advisor:
+      name: Brian Evans
+
+  - name: Visual Philosophy Fellowship
+    purpose: Seeking the transcending guidance within literary, artistic, and cinematic works of art. Members visualize perspective on the humanistic tradition, ethical action, the great unknown, and helpful meanings. We discuss through an informal and welcoming setting, but our minds are an intellectual playground.
+    discord: https://discord.gg/kxuNYPnWeH
+    category: subject
+    club_representative:
+      name: Lorenzo Marconcini
+      email: lorenzomarconcini01@gmail.com
+    advisor:
+      name: Kristin Tripp-Caldwell
+      email: trippcaldwellkristin@fhda.edu
+
+  - name: We Care Club
+    purpose: A volunteering club filled with opportunities to meet new people and help communities in need, hoping to make the world a better place.
+    email: wecareclubfh@gmail.com
+    category: org
+    meetings:
+      day: Friday
+      start_time: 10:00
+      end_time: 10:30
+      frequency: biweekly
+    club_representative:
+      name: Aalifia Angel Foo
+      email: wecareclubfh@gmail.com
+    advisor:
+      name: Mark Bauermeister
+
+  - name: Women in STEM
+    purpose: Encouraging Creative & Innovative Minds.
+    category: stem
+    meetings:
+      day: Monday
+      start_time: 12:10
+      end_time: 13:10
+      frequency: weekly
+    club_representative:
+      name: Marichuy Fonseca
+      email: fonsecae2015@gmail.com
+    advisor:
+      name: Teresa Zwack

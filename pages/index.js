@@ -1,65 +1,100 @@
 import Head from 'next/head'
+import Fuse from 'fuse.js'
+import { useState, useMemo } from 'react'
+
+import Calendar from '../lib/components/Calendar'
+import Modal from '../lib/components/Modal'
+import ClubList from '../lib/components/ClubList'
+import { useDebounce } from '../lib/useDebounce'
+import { getClubsInfo } from '../lib/clubs'
+import { getCampusInfo } from '../lib/campus'
 import styles from '../styles/Home.module.css'
 
-export default function Home() {
+export async function getStaticProps() {
+  const { clubs, categories } = await getClubsInfo()
+
+  return {
+    props: {
+      campus: await getCampusInfo(),
+      clubs,
+      categories,
+    },
+  }
+}
+
+export default function Home({ campus, clubs, categories }) {
+  const [input, setInput] = useState('')
+  const [selectedClub, setSelectedClub] = useState(null)
+  const searchTerm = useDebounce(input, 100)
+
+  const filteredClubs = useMemo(() => {
+    if (!searchTerm.trim()) {
+      return clubs
+    }
+
+    const fuse = new Fuse(clubs, {
+      threshold: 0.3,
+      keys: ['name']
+    })
+
+    return fuse.search(searchTerm).map((options) => options.item)
+  }, [clubs, searchTerm])
+
   return (
     <div className={styles.container}>
       <Head>
-        <title>Create Next App</title>
+        <title>{campus.shortName} Rocks</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
+          {campus.shortName} Rocks
         </h1>
 
         <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
+          Clubs, communities, and more at {campus.name}
         </p>
 
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
+        <input
+          value={input}
+          onChange={(event) => setInput(event.target.value)}
+          placeholder={`Search ${campus.name}`}
+          className={styles.search}
+        />
 
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
+        <Calendar
+          categories={categories}
+          clubs={filteredClubs}
+          onClubSelected={(club) => setSelectedClub(club)}
+        />
 
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
+        <h1>Active Clubs</h1>
 
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
-        </div>
+        <ClubList
+          categories={categories}
+          clubs={filteredClubs}
+          onClick={(club) => setSelectedClub(club)}
+        />
       </main>
 
       <footer className={styles.footer}>
         <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+          href="https://github.com/madhavarshney"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
+          Built by Madhav Varshney
         </a>
       </footer>
+
+      {selectedClub && (
+        <Modal
+          categories={categories}
+          club={selectedClub}
+          onClose={() => setSelectedClub(null)}
+        />
+      )}
     </div>
   )
 }

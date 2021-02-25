@@ -1,0 +1,97 @@
+.calendarWrapper {
+  padding: 2em;
+  width: 100%;
+  word-break: break-word;
+}
+
+.calendar {
+  display: flex;
+  /* border-top: solid 1px var(--border-color);
+  border-bottom: solid 1px var(--border-color); */
+  overflow-x: auto;
+  width: 100%;
+  border-radius: 8px;
+}
+
+.dayColumnContainer {
+  flex: 1;
+  /* TODO: enable */
+  /* max-width: 400px; */
+  overflow: hidden;
+}
+
+.dayColumn {
+  /* border-left: solid 1px var(--border-color); */
+  /* padding: 1em; */
+  padding: 0.5em;
+  padding-top: 0.2em;
+}
+
+.dayColumnContainer:first-child .dayColumn {
+  border-left: none;
+}
+
+.dayTitle {
+  text-align: center;
+  font-weight: bold;
+  /* border-bottom: solid 1px var(--border-color); */
+}
+
+.itemCard {
+  border-radius: 8px;
+  padding: 0.5em 1em 1em;
+  margin: 1em 0px;
+  width: 100%;
+  line-height: 1.5;
+  cursor: pointer;
+  color: #222;
+}
+
+.itemCard h4 {
+  margin: 0.5em 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+}
+
+.showAll {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.showAll button {
+  border: none;
+  outline: none;
+  background: var(--hover-bg-color);
+  color: var(--text-color);
+  border: solid 2px var(--border-color);
+  border-radius: 8px;
+  padding: 0.5em;
+  text-transform: uppercase;
+  font-family: inherit;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.fadeHider {
+  position: absolute;
+  top: -96px;
+  left: 0;
+  width: 100%;
+  height: 85px;
+  background: linear-gradient(rgba(255, 255, 255, 0), var(--background-color));
+}
+
+/* Needed for Safari */
+.dark-mode .fadeHider {
+  background: linear-gradient(rgba(0, 0, 0, 0), var(--background-color));
+}
+
+@media (max-width: 1000px) {
+  .calendarWrapper {
+    padding: 2em 0;
+  }
+}
